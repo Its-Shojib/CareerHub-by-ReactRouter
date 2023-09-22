@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 
 const Job = ({job}) => {
     let {logo} = job;
@@ -9,4 +9,7 @@ const Job = ({job}) => {
     );
 };
 
+Job.propTypes = {
+    job: PropTypes.object
+  };
 export default Job;
